@@ -7,11 +7,9 @@ work out app
 https://github.com/jameslock86/WorkIt
 
 #wireframe
-
-
-
-workit wireframe.jpg
-
+public/images/workit wireframe.jpg
+#relationshipfolder
+public/images/relationshipfolder.jpg
 
 This app is being built on the concept that it will make your workout routine easier being able to encompass everything you may desire.
 
@@ -25,6 +23,8 @@ o 	as a user make it possible to get and error message if 		 	  incorrect login 
 
 o	  as a user make it possible to fill out a profile or make a decision upon how you feel for the day.
 o 	as a user make it possible to input weight, height, age, body-type, sex, or workout strategy that they like to build.
+o  	as a user make sure that you ask if there are any injuries.
+
 o	  as a user make it possible to store the data/update the data for yourself.
 
 
@@ -58,3 +58,20 @@ front end: react
 materialize: stylesheets
 library for backend talk: express and knex
 backend db: psql
+
+
+
+
+[x] 1 create the express server.
+[x] 2 test the server.
+
+
+[] build the back end db
+[] set up the seeds
+[] set up the migrations
+[] login client
+[] login instructor
+
+
+[] profile saving
+[] profile crud ability
