@@ -8,6 +8,7 @@ https://github.com/jameslock86/WorkIt
 
 #wireframe
 public/images/workit wireframe.jpg
+
 #relationshipfolder
 public/images/relationshipfolder.jpg
 
@@ -67,11 +68,15 @@ backend db: psql
 
 
 [] build the back end db
-[] set up the seeds
 [] set up the migrations
+[]use bcrypt to encrypt password login credentials
+[] express learn artical ion bcrypt 
+[] use knex to store into the db
+[] set up the seeds`
 [] login client
 [] login instructor
 
 
 [] profile saving
 [] profile crud ability
+[]
