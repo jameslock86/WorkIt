@@ -70,7 +70,7 @@ backend db: psql
 [] build the back end db
 [] set up the migrations
 []use bcrypt to encrypt password login credentials
-[] express learn artical ion bcrypt 
+[] express learn artical ion bcrypt
 [] use knex to store into the db
 [] set up the seeds`
 [] login client
@@ -80,3 +80,11 @@ backend db: psql
 [] profile saving
 [] profile crud ability
 []
+
+#things learned
+
+knexfile :  contains the various database configurations which allow you to set the db/migrations locations/ seeds locations.
+
+when i am using the postman program i need to use the x-www-form-urlencoded this way the data that is put in will be formated the correct way of 'http/url.'
+
+in my app.js line 26/27 are telling the browser where to look at in the routes section

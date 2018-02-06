@@ -2,13 +2,18 @@ var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
+//reads the data sent
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var knex = require ('knex');
 var index = require('./routes/index');
 var users = require('./routes/users');
+// var profile = require('./routes/profile');
+//password stuff
+var passport = require('passport');
+var session = require('express-session');
 var db = require('knex')({ client: 'pg', connection:{ filename: 'test.pg' } });
-var users = require('routes/users');
+// var users = require('routes/users');
 var app = express();
 
 // view engine setup
@@ -21,11 +26,27 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+//working on the passport login part
+app.use(session({
+	secret: process.env.SECRET_KEY || 'NOIWEFJLWEKFJFEW',
+	resave: false,
+	saveUninitialized: true
+}));
+// app.use(passport.initialize());
+// app.use(passport.session());
+// app.use(flash());
+
+//which directory are we working in
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+
+//middleware application
 
 app.use('/', index);
 app.use('/users', users);
-app.use(users);
+// app.use('/users/:id', profile);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

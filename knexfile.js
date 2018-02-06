@@ -9,6 +9,8 @@ module.exports = {
 			database: 'WorkIt',
 			user:'jameslock86',
 			password:''
+		},
+		seeds:{directory: './seeds/development'
 		}
 	},
 
